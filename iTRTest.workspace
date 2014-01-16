@@ -2,9 +2,9 @@
 <CodeBlocks_workspace_file>
 	<Workspace title="Workspace">
 		<Project filename="ASICamera_demo/ASICameraDemo.cbp" />
-		<Project filename="NeonMath/NeonMath.cbp" />
-		<Project filename="NeonMathTest/NeonMathTest.cbp" />
 		<Project filename="OpenSurf/opensurf.cbp" />
 		<Project filename="OpenSurf_demo/opensurf_test.cbp" />
+		<Project filename="NeonMath/NeonMath.cbp" />
+		<Project filename="NeonMath_test/NeonMathTest.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

@@ -7,35 +7,41 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ASICameraDemo" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
+				<Option output="bin/debug/ASICameraDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-I/usr/include/opencv2    -lopencv_highgui -lopencv_core" />
-					<Add directory="../ASICameraDemo" />
-					<Add directory="../itrbase" />
-					<Add directory="../itrvision" />
-					<Add directory="../itralgorithm" />
+					<Add directory="../../iTRLib/itrbase" />
+					<Add directory="../../iTRLib/itrvision" />
+					<Add directory="../../iTRLib/itralgorithm" />
 				</Compiler>
 				<Linker>
 					<Add library="ASICamera" />
 					<Add library="usb-1.0" />
-					<Add library="../itrbase/libitrbase.a" />
-					<Add library="../itrvision/libitrvision.a" />
+					<Add library="../../iTRLib/itrbase/bin/debug/libitrbase.a" />
+					<Add library="../../iTRLib/itrvision/bin/debug/libitrvision.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ASICameraDemo" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="bin/release/ASICameraDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../../iTRLib/itrbase" />
+					<Add directory="../../iTRLib/itrvision" />
+					<Add directory="../../iTRLib/itralgorithm" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="ASICamera" />
+					<Add library="usb-1.0" />
+					<Add library="../../iTRLib/itrbase/bin/release/libitrbase.a" />
+					<Add library="../../iTRLib/itrvision/bin/release/libitrvision.a" />
 				</Linker>
 			</Target>
 		</Build>

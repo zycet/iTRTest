@@ -7,36 +7,71 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="libNeonMath" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/debug/NeonMath" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="obj/Debug/" />
+				<Option object_output="obj/debug/" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add option="-mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ffast-math" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="libNeonMath" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/release/NeonMath" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
-				<Option object_output="obj/Release/" />
+				<Option object_output="obj/release/" />
 				<Option type="2" />
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ffast-math" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Compiler>
+			<Add option="-mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ffast-math" />
+		</Compiler>
+		<Unit filename="math_acosf.cc" />
+		<Unit filename="math_asinf.cc" />
+		<Unit filename="math_atan2f.cc" />
+		<Unit filename="math_atanf.cc" />
+		<Unit filename="math_ceilf.cc" />
+		<Unit filename="math_cosf.cc" />
+		<Unit filename="math_coshf.cc" />
+		<Unit filename="math_expf.cc" />
+		<Unit filename="math_fabsf.cc" />
+		<Unit filename="math_floorf.cc" />
+		<Unit filename="math_fmodf.cc" />
+		<Unit filename="math_frexpf.cc" />
+		<Unit filename="math_invsqrtf.cc" />
+		<Unit filename="math_ldexpf.cc" />
+		<Unit filename="math_log10f.cc" />
+		<Unit filename="math_logf.cc" />
+		<Unit filename="math_mat2.cc" />
+		<Unit filename="math_mat3.cc" />
+		<Unit filename="math_mat4.cc" />
+		<Unit filename="math_modf.cc" />
+		<Unit filename="math_neon.h" />
+		<Unit filename="math_powf.cc" />
+		<Unit filename="math_sincosf.cc" />
+		<Unit filename="math_sinf.cc" />
+		<Unit filename="math_sinfv.cc" />
+		<Unit filename="math_sinhf.cc" />
+		<Unit filename="math_sqrtf.cc" />
+		<Unit filename="math_sqrtfv.cc" />
+		<Unit filename="math_tanf.cc" />
+		<Unit filename="math_tanhf.cc" />
+		<Unit filename="math_vec2.cc" />
+		<Unit filename="math_vec3.cc" />
+		<Unit filename="math_vec4.cc" />
 		<Extensions>
 			<code_completion />
 			<debugger />

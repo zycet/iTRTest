@@ -1,15 +1,15 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+bin/
+obj/
 *.layout
-*.depence
+*.o
+*.depend
+
+!/doc/
+!/reference/
+!/tools/
+!*.c
+!*.cc
+!*.cpp
+!*.h
+!*.hpp
+!*.cbp
