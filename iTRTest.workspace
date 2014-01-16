@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="ASICamera_demo/ASICameraDemo.cbp" />
+		<Project filename="NeonMath/NeonMath.cbp" />
+		<Project filename="NeonMathTest/NeonMathTest.cbp" />
+		<Project filename="OpenSurf/opensurf.cbp" />
+		<Project filename="OpenSurf_demo/opensurf_test.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
